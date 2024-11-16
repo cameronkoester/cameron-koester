@@ -1,0 +1,24 @@
+<header>
+  <a href="/" tabindex="-1">
+    {% if page.url == "/" %}
+    <h1 class="site-title">{{ site.title }}</h1>
+    {% else %}
+    <p class="site-title">{{ site.title }}</p>
+    {% endif %}
+  </a>
+  <nav class="site-navigation">
+    {% if page.url == "/" %}
+    <a href="/" aria-current="page">Home</a>
+    {% else %}
+    <a href="/">Home</a>
+    {% endif %} {% if page.url == "/blog/" %}
+    <a href="/blog/" aria-current="page">Blog</a>
+    {% else %}
+    <a href="/blog/">Blog</a>
+    {% endif %} {% if page.url == "/contact/" %}
+    <a href="/contact/" aria-current="page">Contact</a>
+    {% else %}
+    <a href="/contact/">Contact</a>
+    {% endif %}
+  </nav>
+</header>

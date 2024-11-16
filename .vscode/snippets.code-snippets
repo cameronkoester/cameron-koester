@@ -1,0 +1,26 @@
+{
+  "All Frontmatter Options": {
+    "prefix": "front",
+    "body": [
+      "---",
+      "title: ${0:}",
+      "metaTitle:",
+      "metaDescription:",
+      "date: 2025-11-01T21:11:00Z",
+      "layout: layouts/base.html",
+      "permalink: /example/index.html",
+      "postlist: true",
+      "changefreq: weekly",
+      "canonicalURL: https://example.com/",
+      "eleventyExcludeFromCollections: true",
+      "noindex: true",
+      "---"
+    ],
+    "description": "Inserts all available frontmatter options."
+  },
+  "Post Frontmatter Template": {
+    "prefix": "post",
+    "body": ["---", "title: ${0:}", "---"],
+    "description": "Inserts a quick frontmatter section for posts."
+  }
+}

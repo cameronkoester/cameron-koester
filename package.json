@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "clean": "npx del _site",
+    "predev": "npm run clean",
+    "prebuild": "npm run clean",
+    "dev": "ELEVENTY_ENV=prod eleventy --serve --quiet",
+    "build": "ELEVENTY_ENV=prod eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "clean-css": "^5.3.3",
+    "del-cli": "^6.0.0",
+    "html-minifier-terser": "^7.2.0",
+    "luxon": "^3.5.0"
+  }
+}

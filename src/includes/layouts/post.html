@@ -1,0 +1,15 @@
+---
+layout: layouts/base.html
+---
+
+<article>
+  <header>
+    <h1 class="title">{{ title }}</h1>
+    <p>
+      <time datetime="{{ page.date | machineDate }}"
+        >{{ page.date | readableDate }}</time
+      >
+    </p>
+  </header>
+  {{ content | safe }}
+</article>

@@ -1,0 +1,16 @@
+.post-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.post-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.post-list time {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
